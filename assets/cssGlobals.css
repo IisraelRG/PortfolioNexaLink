@@ -23,33 +23,59 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
-.header {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 25px;
-  background-color: white;
-}
-.navMenu {
-  display: flex;
-  gap: 20px;
-}
-.navMenu a {
-  font-size: 14px;
-}
-.menu {
-  display: none;
-}
-.btnIcon span {
-  color: white;
-}
-@media screen and (min-width: 240px) {
+@media screen and (min-width: 900px) {
   .header {
-    position: relative;
     width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    background-color: white;
+  }
+  .navMenu {
+    display: flex;
+    gap: 20px;
+  }
+  .navMenu a {
+    font-size: 14px;
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .btnIcon span {
+    color: white;
+  }
+}
+@media screen and (max-width: 899px) {
+  .header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    background-color: white;
+  }
+  .navMenu {
+    display: flex;
+    gap: 20px;
+  }
+  .navMenu a {
+    font-size: 14px;
+  }
+  .menu {
+    display: none;
+  }
+  .btnIcon span {
+    color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100vw;
+    position: relative;
   }
   .navMenu {
     position: absolute;

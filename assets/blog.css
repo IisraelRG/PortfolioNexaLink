@@ -1,146 +1,292 @@
-.main {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  padding: 0px 25px;
-  gap: 25px;
-}
-.categorias {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.listCategories {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (min-width: 900px) {
+  .main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 0px 25px;
+    gap: 25px;
+  }
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .listCategories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.uI {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.uIShow {
-  display: none;
-}
-.uX {
-  display: none;
-}
-.uXShow {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.desarrollo {
-  display: none;
-}
-.desarrolloShow {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.programacion {
-  display: none;
-}
-.programacionShow {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.consultoria {
-  display: none;
-}
-.consultoriaShow {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.catItem {
-  width: 125px;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 14px;
-  background: rgb(255, 255, 255);
-  transition: color 1s linear, background 0.7s linear;
-}
-.catHover:hover {
-  color: white;
-  background: rgb(121, 4, 255);
-}
-.catItem a {
-}
+  .uI {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .uIShow {
+    display: none;
+  }
+  .uX {
+    display: none;
+  }
+  .uXShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .desarrollo {
+    display: none;
+  }
+  .desarrolloShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .programacion {
+    display: none;
+  }
+  .programacionShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .consultoria {
+    display: none;
+  }
+  .consultoriaShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .catItem {
+    width: 125px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+    transition: color 1s linear, background 0.7s linear;
+  }
+  .catHover:hover {
+    color: white;
+    background: rgb(121, 4, 255);
+  }
+  .catItem a {
+  }
 
-.uIItem {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 15px 15px 15px;
-  border-radius: 10px;
-  gap: 15px;
-  background: rgb(255, 255, 255);
-  cursor: pointer;
-}
-.uIItem:hover .btnIcon {
-  animation: btnIconAnimate 1s infinite linear;
-}
-@keyframes btnIconAnimate {
-  50% {
-    box-shadow: 0px 0px 0px rgb(121, 4, 255);
+  .uIItem {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px 15px 15px;
+    border-radius: 10px;
+    gap: 15px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .uIItem:hover .btnIcon {
+    animation: btnIconAnimate 1s infinite linear;
+  }
+  @keyframes btnIconAnimate {
+    50% {
+      box-shadow: 0px 0px 0px rgb(121, 4, 255);
+    }
+  }
+  .btnIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    background: rgb(121, 4, 255);
+    box-shadow: 0px 0px 5px rgb(121, 4, 255);
+  }
+  .contentImg {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .contentImg img {
+    width: 250px;
+    height: 150px;
+  }
+  .uIText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .uIItem p {
+    color: rgba(0, 0, 0, 0.596);
   }
 }
-.btnIcon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  color: white;
-  background: rgb(121, 4, 255);
-  box-shadow: 0px 0px 5px rgb(121, 4, 255);
+@media screen and (max-width: 899px) {
+  .main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 0px 25px;
+    gap: 25px;
+  }
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .listCategories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .uI {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .uIShow {
+    display: none;
+  }
+  .uX {
+    display: none;
+  }
+  .uXShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .desarrollo {
+    display: none;
+  }
+  .desarrolloShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .programacion {
+    display: none;
+  }
+  .programacionShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .consultoria {
+    display: none;
+  }
+  .consultoriaShow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .catItem {
+    width: 125px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+    transition: color 1s linear, background 0.7s linear;
+  }
+  .catHover:hover {
+    color: white;
+    background: rgb(121, 4, 255);
+  }
+  .catItem a {
+  }
+
+  .uIItem {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px 15px 15px;
+    border-radius: 10px;
+    gap: 15px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .uIItem:hover .btnIcon {
+    animation: btnIconAnimate 1s infinite linear;
+  }
+  @keyframes btnIconAnimate {
+    50% {
+      box-shadow: 0px 0px 0px rgb(121, 4, 255);
+    }
+  }
+  .btnIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    background: rgb(121, 4, 255);
+    box-shadow: 0px 0px 5px rgb(121, 4, 255);
+  }
+  .contentImg {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .contentImg img {
+    width: 250px;
+    height: 150px;
+  }
+  .uIText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .uIItem p {
+    color: rgba(0, 0, 0, 0.596);
+  }
 }
-.contentImg {
-  width: 250px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 10px 10px 0px 0px;
-}
-.contentImg img {
-  width: 250px;
-  height: 150px;
-}
-.uIText {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.uIItem p {
-  color: rgba(0, 0, 0, 0.596);
-}
-@media screen and (min-width: 240px) {
+@media screen and (max-width: 540px) {
   .main {
     width: 100%;
     height: auto;
