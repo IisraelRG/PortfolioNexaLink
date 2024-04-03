@@ -39,3 +39,21 @@ h6 {
 .title {
   text-align: right;
 }
+@media screen and (min-width: 240px) {
+  h1 {
+    font-size: 60px;
+    line-height: 100%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 90vh;
+  }
+  .title {
+    text-align: center;
+  }
+}

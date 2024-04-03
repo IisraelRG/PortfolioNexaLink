@@ -117,3 +117,58 @@
 .uIItem p {
   color: rgba(0, 0, 0, 0.596);
 }
+@media screen and (min-width: 240px) {
+  .main {
+    height: auto;
+    overflow-y: scroll;
+  }
+  .categorias {
+    display: none;
+  }
+
+  .listCategories {
+    gap: 20px;
+  }
+  .uI {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .uX {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .desarrollo {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .programacion {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .consultoria {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .uIItem {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 5px;
+  }
+}

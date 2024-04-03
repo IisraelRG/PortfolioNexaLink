@@ -10,7 +10,19 @@ const desarrollo = document.querySelector(".desarrollo");
 const programacion = document.querySelector(".programacion");
 const consultoria = document.querySelector(".consultoria");
 
+const menu = document.querySelector(".menu");
+const navMenu = document.querySelector(".navMenu");
 let valor = 0;
+
+menu.addEventListener("click", () => {
+  if (valor == 0) {
+    navMenu.classList.add("navMenuShow");
+    valor = 1;
+  } else {
+    navMenu.classList.remove("navMenuShow");
+    valor = 0;
+  }
+});
 btnuI.addEventListener("click", () => {
   /*gsap.to(".uI", {
     duration: 1, 
