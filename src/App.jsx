@@ -8,6 +8,7 @@ import Servicios from "./Pages/Servicios";
 import Nosotros from "./Pages/Nosotros";
 import Comunidad from "./Pages/Comunidad";
 import Contacto from "./Pages/Contacto";
+import Get_Into from "./Pages/Get_Into";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="nosotros" element={<Nosotros />}></Route>
           <Route path="comunidad" element={<Comunidad />}></Route>
           <Route path="contacto" element={<Contacto />}></Route>
+          <Route path="getInto" element={<Get_Into />}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -20,6 +20,7 @@ function Header() {
           <Link to="/nosotros">Nosotros</Link>
           <Link to="/comunidad">Comunidad</Link>
           <Link to="/contacto">Contacto</Link>
+          <Link to="/getInto">Ingresar</Link>
         </nav>
         <a href="#" onClick={effectNavBarShow} className="btn_Menu">
           <img src={Menu} alt="Menu" />

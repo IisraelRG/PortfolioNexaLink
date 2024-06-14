@@ -1,0 +1,89 @@
+.menu_Categories {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 50px;
+}
+.main {
+  width: 100%;
+}
+.contentCards {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  padding-bottom: 170px;
+  overflow-y: scroll;
+}
+
+.card {
+  width: 275px;
+  height: 365px;
+  padding: 10px;
+  background: white;
+  border: 1px solid;
+  border-radius: 15px;
+}
+.card img {
+  width: 100%;
+  height: 166px;
+  border-radius: 15px;
+}
+.conText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text h3 {
+  margin: 10px 0px;
+}
+.conTags {
+  display: flex;
+  gap: 5px;
+}
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background: black;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.contButtons {
+  display: flex;
+  gap: 20px;
+}
+.btn_Card {
+  transition: transform 0.5s linear;
+}
+.btn_Card:hover {
+  transform: scale(0.9);
+}
+.btn_Figma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.btn_Behance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  color: white;
+  background: black;
+  border-radius: 10px;
+}
