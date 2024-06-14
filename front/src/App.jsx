@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-
+//Componentes
+import Header from "./Components/Header";
+//RUTAS
 import Inicio from "./Pages/Inicio";
 import Proyectos from "./Pages/Proyectos";
 import Servicios from "./Pages/Servicios";
@@ -10,11 +12,10 @@ import Comunidad from "./Pages/Comunidad";
 import Contacto from "./Pages/Contacto";
 import Get_Into from "./Pages/Get_Into";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Inicio />}></Route>
           <Route path="proyectos" element={<Proyectos />}></Route>
