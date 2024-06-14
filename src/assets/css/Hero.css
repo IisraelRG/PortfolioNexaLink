@@ -1,0 +1,48 @@
+.heroContent {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.conText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn_Contacto {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  background: #ffffff;
+  transition: background 0.9s linear, color 1s linear;
+}
+.btn_Contacto:hover {
+  background: #000;
+  color: #ffffff;
+  transition: background 0.9s linear, color 1s linear;
+}
+.imgHero {
+  width: 100%;
+  position: absolute;
+  bottom: -20%;
+  animation: moveWorld 7s infinite alternate;
+  z-index: -1;
+}
+@keyframes moveWorld {
+  0% {
+    bottom: -20%;
+  }
+  100% {
+    bottom: -30%;
+  }
+}
